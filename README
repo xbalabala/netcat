@@ -86,3 +86,15 @@ the original source code (albeit with renamed variables/functions and
 updated/edited comments), while OpenBSD's is said to be a complete
 rewrite.  OpenBSD's version lacks some features (hexdump, line-by-line,
 multiplexing) but has some more (AF_UNIX sockets and SOCKS support).
+
+how to build:
+
+- https://stackoverflow.com/questions/2531827/what-are-makefile-am-and-makefile-in
+- https://askubuntu.com/questions/27677/cannot-find-install-sh-install-sh-or-shtool-in-ac-aux
+- https://en.wikipedia.org/wiki/Configure_script
+
+    aclocal
+    autoheader
+    automake --force-missing --add-missing
+    autoconf
+    ./configure
